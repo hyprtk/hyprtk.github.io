@@ -1,8 +1,8 @@
 # hyprtk.github.io
 
 The landing page for [hyprtk](https://github.com/hyprtk): the dotfiles that
-install a themed Hyprland desktop on 18 Linux distributions, and hyprtk-bar, the
-GTK3 suite that replaces the rest of the shell.
+install a themed Hyprland desktop on 18 Linux distributions, and hyprtk-bar-qt, the
+Qt/QML suite built on Quickshell that replaces the rest of the shell.
 
 Static HTML, CSS and a small amount of JavaScript. No build step, no framework.
 
@@ -48,5 +48,5 @@ assets/img/                 screenshots and social card
 
 ## Credits
 
-Screenshots are from the hyprtk desktop and hyprtk-bar. IBM Plex is licensed
+Screenshots are from the hyprtk desktop and hyprtk-bar-qt. IBM Plex is licensed
 under the SIL Open Font License 1.1.

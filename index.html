@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>hyprtk — Two projects. One desktop.</title>
-  <meta name="description" content="Hyprland dotfiles that install a themed desktop on 18 Linux distributions, and hyprtk-bar — a GTK3 bar, launcher and control centre in one app.">
+  <meta name="description" content="Hyprland dotfiles that install a themed desktop on 18 Linux distributions, and hyprtk-bar-qt — a Qt/QML bar, launcher and control centre built on Quickshell.">
   <link rel="canonical" href="https://hyprtk.github.io/">
   <meta name="theme-color" content="#0a0c11">
   <meta name="color-scheme" content="dark light">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="hyprtk">
   <meta property="og:title" content="hyprtk — Two projects. One desktop.">
-  <meta property="og:description" content="Hyprland dotfiles for 18 Linux distributions, and a GTK3 bar that replaces the rest of the shell.">
+  <meta property="og:description" content="Hyprland dotfiles for 18 Linux distributions, and a Qt/QML bar built on Quickshell that replaces the rest of the shell.">
   <meta property="og:url" content="https://hyprtk.github.io/">
   <meta property="og:image" content="https://hyprtk.github.io/assets/img/og.jpg">
   <meta property="og:image:width" content="1200">
@@ -44,7 +44,7 @@
       <a class="brand" href="#top" aria-label="hyprtk, back to top">hyprtk</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#dotfiles">Dotfiles</a>
-        <a href="#bar">hyprtk-bar</a>
+        <a href="#bar">hyprtk-bar-qt</a>
         <a class="nav-github" href="https://github.com/hyprtk">GitHub</a>
         <button class="theme-toggle" type="button" aria-label="Switch to light theme">
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
@@ -58,26 +58,26 @@
     <section class="wrap hero" aria-labelledby="hero-title">
       <p class="eyebrow">Hyprland tinkerer · Linux desktop</p>
       <h1 id="hero-title">Two projects.<br>One desktop.</h1>
-      <p class="lede">Dotfiles that turn any Linux distribution into a themed Hyprland desktop — and a GTK3 bar that replaces the rest of the shell.</p>
+      <p class="lede">Dotfiles that turn any Linux distribution into a themed Hyprland desktop — and a Qt/QML bar built on Quickshell that replaces the rest of the shell.</p>
       <div class="actions">
         <a class="btn" href="#dotfiles">Explore the dotfiles
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="btn btn--ghost" href="#bar">Explore hyprtk-bar</a>
+        <a class="btn btn--ghost" href="#bar">Explore hyprtk-bar-qt</a>
       </div>
 
       <dl class="specs">
         <div class="spec"><dt>Distributions</dt><dd>18 · six families</dd></div>
         <div class="spec"><dt>Installer</dt><dd>gum TUI · one script</dd></div>
         <div class="spec"><dt>Theming</dt><dd>pywal16 · wallpaper-led</dd></div>
-        <div class="spec"><dt>Desktop</dt><dd>Hyprland · GTK3</dd></div>
+        <div class="spec"><dt>Desktop</dt><dd>Hyprland · Qt 6</dd></div>
       </dl>
 
       <figure class="shot">
-        <img src="assets/img/desktop-arch.webp" width="1280" height="360" fetchpriority="high" alt="An Arch Linux desktop: the hyprtk-bar along the top, a pywal16-tinted wallpaper, a clock in the lower right and a weather widget in the lower left.">
+        <img src="assets/img/desktop-arch.webp" width="1280" height="360" fetchpriority="high" alt="An Arch Linux desktop: the hyprtk-bar-qt along the top, a pywal16-tinted wallpaper, a clock in the lower right and a weather widget in the lower left.">
         <figcaption>
           <span>Arch Linux · current build</span>
-          <span>Hyprland · pywal16 · hyprtk-bar</span>
+          <span>Hyprland · pywal16 · hyprtk-bar-qt</span>
         </figcaption>
       </figure>
     </section>
@@ -100,7 +100,7 @@
         <li><strong>pywal16 pipeline</strong><span>One wallpaper drives every colour on the desktop.</span></li>
         <li><strong>gum TUI installer</strong><span>Auto-detects the distro, installs 18 package groups, keeps prompts clean.</span></li>
         <li><strong>XFCE fallback</strong><span>A complete desktop safety-net alongside Hyprland.</span></li>
-        <li><strong>hyprtk-bar bundled</strong><span>The desktop suite installs and autostarts with the dots.</span></li>
+        <li><strong>hyprtk-bar-qt bundled</strong><span>The desktop suite installs and autostarts with the dots.</span></li>
         <li><strong>NVIDIA &amp; AMD ready</strong><span>Dedicated configs, DRM and AMDGPU support.</span></li>
         <li><strong>Session &amp; lock</strong><span>swaylock blur, logout menu, SDDM and GRUB theming.</span></li>
       </ul>
@@ -129,13 +129,13 @@ sh ./1-install.sh</code></pre>
 
     <section class="wrap section project--purple" id="bar" aria-labelledby="bar-title">
       <div class="section-head">
-        <p class="kicker">Project · hyprtk-bar</p>
+        <p class="kicker">Project · hyprtk-bar-qt</p>
         <h2 id="bar-title">The bar that is the whole desktop.</h2>
-        <p class="lede">A standalone GTK3 suite that replaced a stack of separate tools: taskbar, launcher, notification daemon, control centre, system monitor and desktop widgets — themed live from pywal16.</p>
+        <p class="lede">A standalone Qt/QML suite, built on Quickshell, that replaced a stack of separate tools: taskbar, launcher, notification daemon, control centre, system monitor and desktop widgets — themed live from pywal16.</p>
       </div>
 
       <figure class="shot">
-        <img src="assets/img/system-monitor.webp" width="940" height="640" loading="lazy" decoding="async" alt="The hyprtk-bar system monitor showing CPU, memory, GPU, disk and network usage with a process list.">
+        <img src="assets/img/system-monitor.webp" width="940" height="640" loading="lazy" decoding="async" alt="The hyprtk-bar-qt system monitor showing CPU, memory, GPU, disk and network usage with a process list.">
         <figcaption>
           <span>System monitor</span>
           <span>CPU · GPU · disks · processes</span>
@@ -144,7 +144,7 @@ sh ./1-install.sh</code></pre>
 
       <div class="stats">
         <div class="stat"><b>4</b><span>Menu layouts</span></div>
-        <div class="stat"><b>8</b><span>Bar themes</span></div>
+        <div class="stat"><b>9</b><span>Bar themes</span></div>
         <div class="stat"><b>9</b><span>Settings pages</span></div>
         <div class="stat"><b>7</b><span>Desktop widgets</span></div>
       </div>
@@ -165,14 +165,14 @@ sh ./1-install.sh</code></pre>
           <span>Install</span>
           <button class="copy" type="button" data-copy="#code-bar">Copy</button>
         </div>
-        <pre><code id="code-bar">git clone https://github.com/hyprtk/hyprtk-bar
-cd hyprtk-bar
+        <pre><code id="code-bar">git clone https://github.com/hyprtk/hyprtk-bar-qt
+cd hyprtk-bar-qt
 ./install.sh</code></pre>
       </div>
-      <p class="note">Run <code>./install.sh --dry-run</code> first to check requirements without changing anything. The installer bundles eight bar themes and four wallpapers.</p>
+      <p class="note">Run <code>./install.sh --dry-run</code> first to check requirements without changing anything. The installer bundles nine bar themes and four wallpapers.</p>
 
       <figure class="strip">
-        <img src="assets/img/bar-detail.webp" width="1400" height="35" loading="lazy" decoding="async" alt="A close crop of hyprtk-bar at native scale: quick links, the start button, task list and the active window.">
+        <img src="assets/img/bar-detail.webp" width="1400" height="35" loading="lazy" decoding="async" alt="A close crop of hyprtk-bar-qt at native scale: quick links, the start button, task list and the active window.">
         <figcaption>The bar at native scale · start · quick links · tasks · active window</figcaption>
       </figure>
 
@@ -189,7 +189,7 @@ cd hyprtk-bar
         <figure class="thumb"><img src="assets/img/quick-settings.webp" width="336" height="209" loading="lazy" decoding="async" alt="Quick settings panel with toggles for Wi-Fi, Bluetooth, volume, microphone and brightness."><figcaption><b>Quick settings</b> · system toggles</figcaption></figure>
         <figure class="thumb"><img src="assets/img/calendar.webp" width="231" height="176" loading="lazy" decoding="async" alt="A popup calendar on the bar clock."><figcaption><b>Calendar</b> · clock popup</figcaption></figure>
         <figure class="thumb"><img src="assets/img/notification-center.webp" width="380" height="320" loading="lazy" decoding="async" alt="The notification centre listing recent notifications with app icons."><figcaption><b>Notification centre</b> · history</figcaption></figure>
-        <figure class="thumb"><img src="assets/img/settings.webp" width="915" height="580" loading="lazy" decoding="async" alt="The hyprtk-bar settings window showing bar height, width, alignment and opacity controls."><figcaption><b>Settings</b> · nine pages</figcaption></figure>
+        <figure class="thumb"><img src="assets/img/settings.webp" width="915" height="580" loading="lazy" decoding="async" alt="The hyprtk-bar-qt settings window showing bar height, width, alignment and opacity controls."><figcaption><b>Settings</b> · nine pages</figcaption></figure>
       </div>
 
       <h3 class="subhead">Desktop widgets</h3>
@@ -205,8 +205,9 @@ cd hyprtk-bar
       <h2 id="stack-title">Built with</h2>
       <ul class="chips">
         <li>Hyprland</li>
-        <li>GTK3</li>
-        <li>gtk-layer-shell</li>
+        <li>Qt 6</li>
+        <li>Quickshell</li>
+        <li>QML</li>
         <li>Python</li>
         <li>Lua</li>
         <li>pywal16</li>
@@ -221,7 +222,7 @@ cd hyprtk-bar
       <p>hyprtk · Linux is my desktop.</p>
       <nav class="footer-links" aria-label="Elsewhere">
         <a href="https://github.com/hyprtk/dotfiles">dotfiles</a>
-        <a href="https://github.com/hyprtk/hyprtk-bar">hyprtk-bar</a>
+        <a href="https://github.com/hyprtk/hyprtk-bar-qt">hyprtk-bar-qt</a>
         <a href="https://github.com/hyprtk/my-dots">my-dots</a>
         <a href="https://github.com/hyprtk">GitHub</a>
       </nav>
