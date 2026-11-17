@@ -1,8 +1,13 @@
 # hyprtk.github.io
 
 The landing page for [hyprtk](https://github.com/hyprtk): the dotfiles that
-install a themed Hyprland desktop on 18 Linux distributions, and hyprtk-bar-qt, the
-Qt/QML suite built on Quickshell that replaces the rest of the shell.
+install a themed Hyprland desktop on 18 Linux distributions, and the Qt 6 / QML
+applications that live on it — [hyprtk-bar-qt](https://github.com/hyprtk/hyprtk-bar-qt),
+[hyprtk-fm](https://github.com/hyprtk/hyprtk-file-manager),
+[hyprtk-editor](https://github.com/hyprtk/hyprtk-editor),
+[config-manager](https://github.com/hyprtk/hyprtk-hyprland-config-manager) and the
+[ISO creator](https://github.com/hyprtk/Hyprtk-ISO-Creator) /
+[USB writer](https://github.com/hyprtk/hyprtk-usb).
 
 Static HTML, CSS and a small amount of JavaScript. No build step, no framework.
 
