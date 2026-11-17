@@ -1,5 +1,8 @@
 # hyprtk.github.io
 
+> **Part of the hyprtk suite** — [dotfiles](https://github.com/hyprtk/dotfiles) · [bar-qt](https://github.com/hyprtk/hyprtk-bar-qt) · [file manager](https://github.com/hyprtk/hyprtk-file-manager) · [editor](https://github.com/hyprtk/hyprtk-editor) · [config manager](https://github.com/hyprtk/hyprtk-hyprland-config-manager) · [hyprtk-usb](https://github.com/hyprtk/hyprtk-usb) · [ISO creator](https://github.com/hyprtk/Hyprtk-ISO-Creator)
+
+
 The landing page for [hyprtk](https://github.com/hyprtk): the dotfiles that
 install a themed Hyprland desktop on 18 Linux distributions, and the Qt 6 / QML
 applications that live on it — [hyprtk-bar-qt](https://github.com/hyprtk/hyprtk-bar-qt),
