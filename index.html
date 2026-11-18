@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hyprtk — Two projects. One desktop.</title>
-  <meta name="description" content="Hyprland dotfiles that install a themed desktop on 18 Linux distributions, and hyprtk-bar-qt — a Qt/QML bar, launcher and control centre built on Quickshell.">
+  <title>hyprtk — One suite. One desktop.</title>
+  <meta name="description" content="hyprtk: Hyprland dotfiles that install a themed desktop on 18 Linux distributions, plus the Qt/QML apps that live on it — bar, file manager, editor, terminal, calculator, settings and install medium.">
   <link rel="canonical" href="https://hyprtk.github.io/">
-  <meta name="theme-color" content="#0a0c11">
+  <meta name="theme-color" content="#05060b">
   <meta name="color-scheme" content="dark light">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="hyprtk">
-  <meta property="og:title" content="hyprtk — Two projects. One desktop.">
-  <meta property="og:description" content="Hyprland dotfiles for 18 Linux distributions, and a Qt/QML bar built on Quickshell that replaces the rest of the shell.">
+  <meta property="og:title" content="hyprtk — One suite. One desktop.">
+  <meta property="og:description" content="One suite, one desktop: Hyprland dotfiles for 18 Linux distributions and the Qt/QML apps that live on it.">
   <meta property="og:url" content="https://hyprtk.github.io/">
   <meta property="og:image" content="https://hyprtk.github.io/assets/img/og.jpg">
   <meta property="og:image:width" content="1200">
@@ -57,8 +57,9 @@
 
   <main id="main">
     <section class="wrap hero" aria-labelledby="hero-title">
+      <img class="hero-lockup" src="assets/img/brand-banner.png" width="420" height="96" alt="hyprtk — the wordmark and the v09 mark" fetchpriority="high">
       <p class="eyebrow">Hyprland tinkerer · Linux desktop</p>
-      <h1 id="hero-title">One suite.<br>One desktop.</h1>
+      <h1 id="hero-title">One suite.<br><span class="grad">One desktop.</span></h1>
       <p class="lede">Dotfiles that turn any Linux distribution into a themed Hyprland desktop — plus the Qt 6 / QML applications that make it a desktop: the bar, the file manager, the editor, the settings GUI and the install medium.</p>
       <div class="actions">
         <a class="btn" href="#dotfiles">Explore the dotfiles
@@ -205,13 +206,15 @@ cd hyprtk-bar-qt
     <section class="wrap section" id="suite" aria-labelledby="suite-title">
       <div class="section-head">
         <p class="kicker">The suite</p>
-        <h2 id="suite-title">One desktop, seven repositories.</h2>
+        <h2 id="suite-title">One desktop, nine repositories.</h2>
       </div>
       <ul class="features">
         <li><strong><a href="https://github.com/hyprtk/dotfiles">dotfiles</a></strong><span>The desktop itself: any-distro installer, Hyprland Lua config, themes and 60+ scripts.</span></li>
         <li><strong><a href="https://github.com/hyprtk/hyprtk-bar-qt">hyprtk-bar-qt</a></strong><span>The Qt 6 / QML (Quickshell) bar: launcher, notifications, tray, quick settings, desktop widgets.</span></li>
         <li><strong><a href="https://github.com/hyprtk/hyprtk-file-manager">hyprtk-fm</a></strong><span>The file manager: tabs, dual pane, previews, LAN share browsing.</span></li>
         <li><strong><a href="https://github.com/hyprtk/hyprtk-editor">hyprtk-editor</a></strong><span>The text editor: 600+ syntaxes, regex search, command palette, session restore.</span></li>
+        <li><strong><a href="https://github.com/hyprtk/hyprtk-term">hyprtk-term</a></strong><span>The terminal: libvterm core, tabs, scrollback search and the pywal palette.</span></li>
+        <li><strong><a href="https://github.com/hyprtk/hyprtk-calc">hyprtk-calc</a></strong><span>The calculator: exact decimal arithmetic, three keypads and a shared history.</span></li>
         <li><strong><a href="https://github.com/hyprtk/hyprtk-hyprland-config-manager">config-manager</a></strong><span>The Hyprland settings GUI — Lua-first, writes back to the file that owns each setting.</span></li>
         <li><strong><a href="https://github.com/hyprtk/hyprtk-usb">hyprtk-usb</a></strong><span>Writes a built ISO to a USB stick, with an optional persistence partition.</span></li>
         <li><strong><a href="https://github.com/hyprtk/Hyprtk-ISO-Creator">Hyprtk-ISO-Creator</a></strong><span>Builds the live install ISO with the desktop preinstalled.</span></li>
@@ -235,12 +238,14 @@ cd hyprtk-bar-qt
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>hyprtk · Linux is my desktop.</p>
+      <p><img class="footer-mark" src="assets/img/brand-mark.svg" width="22" height="22" alt="">hyprtk · Linux is my desktop.</p>
       <nav class="footer-links" aria-label="Elsewhere">
         <a href="https://github.com/hyprtk/dotfiles">dotfiles</a>
         <a href="https://github.com/hyprtk/hyprtk-bar-qt">hyprtk-bar-qt</a>
         <a href="https://github.com/hyprtk/hyprtk-file-manager">hyprtk-fm</a>
         <a href="https://github.com/hyprtk/hyprtk-editor">hyprtk-editor</a>
+        <a href="https://github.com/hyprtk/hyprtk-term">hyprtk-term</a>
+        <a href="https://github.com/hyprtk/hyprtk-calc">hyprtk-calc</a>
         <a href="https://github.com/hyprtk/hyprtk-hyprland-config-manager">config-manager</a>
         <a href="https://github.com/hyprtk/hyprtk-usb">hyprtk-usb</a>
         <a href="https://github.com/hyprtk/Hyprtk-ISO-Creator">ISO creator</a>

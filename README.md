@@ -37,24 +37,41 @@ run publishes the site; later pushes redeploy it.
 index.html                  landing page
 404.html                    not-found page
 assets/css/fonts.css        self-hosted IBM Plex @font-face
-assets/css/styles.css       tokens, layout, components
+assets/css/styles.css       brand tokens, layout, components
 assets/js/main.js           theme toggle, copy buttons
 assets/fonts/               IBM Plex woff2, latin subset
-assets/img/                 screenshots and social card
+assets/img/                 screenshots, brand mark and social card
 .github/workflows/pages.yml GitHub Pages deploy
 ```
+
+## Branding
+
+The site follows the suite's **v09** brand kit:
+
+- **Mark** — the oversized `ht` monogram in a gradient ring (`assets/img/brand-mark.svg`).
+- **Wordmark** — `hypr` cyan, `tk` magenta, **KoblenzSerial Bold converted to
+  outlines**, so no font file is downloaded or redistributed. The outlined art
+  lives in `brand-banner.png`, `brand-lockup.svg` and `brand-wordmark.svg`.
+- **Palette** — cyan `#02DEDE`, magenta `#FD4FB6`, navy `#000044`, ink
+  `#05060B`, white `#F2F6FF`, muted `#8A93A6`; exposed as `--brand-*` tokens and
+  used for the accent pairs, the hero gradient and the selection colour.
+
+The full guide lives in the
+[dotfiles README → Branding](https://github.com/hyprtk/dotfiles#branding).
 
 ## Design notes
 
 - Dark and light themes are token-driven; the toggle writes `data-theme` on the
   root and respects `prefers-color-scheme` on first load.
-- Each project carries its own accent: cyan for the dotfiles, purple for the bar.
+- Each project carries its own accent: brand cyan for the dotfiles, brand
+  magenta for the bar.
 - IBM Plex Serif for display, IBM Plex Sans for body, IBM Plex Mono for labels
-  and code.
+  and code. The Koblenz wordmark is artwork, not a webfont.
 - No third-party requests: fonts, images and scripts are all served from the
   repo.
 
 ## Credits
 
 Screenshots are from the hyprtk desktop and hyprtk-bar-qt. IBM Plex is licensed
-under the SIL Open Font License 1.1.
+under the SIL Open Font License 1.1. The brand mark and wordmark are part of the
+hyprtk brand kit.

@@ -4,20 +4,29 @@
   --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
-  --bg: #0a0c11;
-  --bg-veil: rgba(10, 12, 17, 0.84);
-  --panel: #121620;
-  --panel-2: #171c27;
-  --code: #0d1119;
-  --line: #262c39;
-  --line-strong: #37404f;
-  --text: #e8ebf2;
-  --muted: #9aa4b5;
-  --faint: #8b94a5;
-  --accent: #22d3ee;
-  --accent-strong: #67e8f9;
-  --accent-2: #c084fc;
-  --accent-2-strong: #d8b4fe;
+  /* hyprtk brand tokens — v09 */
+  --brand-cyan: #02dede;
+  --brand-magenta: #fd4fb6;
+  --brand-navy: #000044;
+  --brand-ink: #05060b;
+  --brand-white: #f2f6ff;
+  --brand-muted: #8a93a6;
+  --brand-grad: linear-gradient(115deg, #02dede, #5fb8f5 52%, #fd4fb6);
+
+  --bg: #05060b;
+  --bg-veil: rgba(5, 6, 11, 0.84);
+  --panel: #0b101c;
+  --panel-2: #101828;
+  --code: #080c15;
+  --line: #1c2434;
+  --line-strong: #2e3a50;
+  --text: #f2f6ff;
+  --muted: #8a93a6;
+  --faint: #71809a;
+  --accent: #02dede;
+  --accent-strong: #63f2f2;
+  --accent-2: #fd4fb6;
+  --accent-2-strong: #ff8acd;
   --on-accent: #04131a;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
 
@@ -30,20 +39,21 @@
 
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #f7f8fb;
-  --bg-veil: rgba(247, 248, 251, 0.86);
+  --brand-grad: linear-gradient(115deg, #067a86, #3b7fbf 52%, #c0267f);
+  --bg: #f7f9fe;
+  --bg-veil: rgba(247, 249, 254, 0.86);
   --panel: #ffffff;
-  --panel-2: #eef1f6;
-  --code: #f1f4f8;
-  --line: #dde2ea;
-  --line-strong: #c3cad6;
-  --text: #12161f;
-  --muted: #556071;
-  --faint: #66707f;
-  --accent: #0e7490;
-  --accent-strong: #0b5f77;
-  --accent-2: #7e22ce;
-  --accent-2-strong: #6b21a8;
+  --panel-2: #eef3fb;
+  --code: #f1f5fb;
+  --line: #dce4f0;
+  --line-strong: #c4d0e2;
+  --text: #0a1020;
+  --muted: #55617a;
+  --faint: #6b7790;
+  --accent: #067a86;
+  --accent-strong: #045c66;
+  --accent-2: #c0267f;
+  --accent-2-strong: #9d1e66;
   --on-accent: #ffffff;
   --shadow: 0 20px 48px rgba(20, 28, 44, 0.10);
 }
@@ -109,6 +119,12 @@ h3 {
   text-wrap: balance;
 }
 
+h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 p {
   margin: 0;
 }
@@ -167,11 +183,10 @@ p {
 
 .brand::before {
   content: '';
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent);
+  width: 27px;
+  height: 27px;
+  border-radius: 7px;
+  background: url('../img/brand-mark.svg') center / contain no-repeat;
 }
 
 .site-nav {
@@ -248,7 +263,21 @@ p {
   max-width: 13ch;
   font-size: clamp(2.85rem, 7.6vw, 5.4rem);
   line-height: 0.98;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.01em;
+}
+
+.hero-lockup {
+  display: block;
+  width: min(340px, 66vw);
+  height: auto;
+  margin: 0 0 26px;
+}
+
+.grad {
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .lede {
@@ -701,6 +730,14 @@ p {
   font-family: var(--font-mono);
   font-size: 0.74rem;
   color: var(--muted);
+}
+
+.footer-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  vertical-align: -5px;
+  margin-right: 7px;
 }
 
 .footer-links {
